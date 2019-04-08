@@ -1,0 +1,59 @@
+{
+  "name": "project_name",
+  "version": "0.1.0",
+  "private": true,
+  "description": "project_name",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^7.1.6",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-posthtml": "^3.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^2.3.0",
+    "posthtml-include": "^1.1.0",
+    "pump": "^1.0.3",
+    "run-sequence": "^2.2.0",
+    "stylelint": "^8.1.1",
+    "stylelint-config-htmlacademy": "^0.1.0"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint src/sass/**/*.scss --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 10",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "src/*.html",
+    "src/*.json",
+    "src/*.js",
+    "src/js/**/*.js",
+    "src/img/**/*.svg",
+    "src/sass/**/*.{sass,scss}"
+  ],
+  "engines": {
+    "node": "8.2"
+  },
+  "dependencies": {
+    "eslint": "^5.9.0"
+  }
+}
