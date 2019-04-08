@@ -1,0 +1,75 @@
+.section {
+  background-color: $menu-bg;
+
+  &--one {
+    background-image: url("../img/bg-screen-one.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-screen-one@2x.jpg");
+    }
+  }
+
+  &--two {
+    background-image: url("../img/bg-screen-two.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-screen-two@2x.jpg");
+    }
+  }
+
+  &--three {
+    background-image: url("../img/bg-screen-three.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-screen-three@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: $full-mobile-width) {
+  .section {
+    background-color: $menu-bg;
+
+    &--one {
+      background-image: url("../img/bg-screen-one-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-screen-one-mobile@2x.jpg");
+      }
+    }
+
+    &--two {
+      background-image: url("../img/bg-screen-two-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-screen-two-mobile@2x.jpg");
+      }
+    }
+
+    &--three {
+      background-image: url("../img/bg-screen-three-mobile.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/bg-screen-three-mobile@2x.jpg");
+      }
+    }
+  }
+}

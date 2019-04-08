@@ -1,0 +1,9 @@
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: $mobile-width) {
+  .mobile-nav {
+    // display: block;
+  }
+}

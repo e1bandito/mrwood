@@ -1,0 +1,31 @@
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  color: $text-color;
+  @include main-font-bold(18px, 22px, 800);
+  letter-spacing: 0.64px;
+  background-color: $white;
+  border-radius: 5px;
+  transition: all 0.3s;
+
+  &--page-main {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &:hover {
+    background-color: $yellow;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .btn {
+    @include main-font-bold(14px, 18px, 800);
+    letter-spacing: 0.53px;
+  }
+}

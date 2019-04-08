@@ -1,10 +1,101 @@
-@mixin list-style-reset {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+@mixin main-font-reg ($fs:$default-fs, $li:$default-li, $fw:400) {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: $fs;
+  line-height: $li;
+  font-weight: $fw;
 }
 
-@mixin indent-reset {
-  padding: 0;
-  margin: 0;
+@mixin main-font-light ($fs:$default-fs, $li:$default-li, $fw:300) {
+  font-family: "MontserratLight", Arial, sans-serif;
+  font-size: $fs;
+  line-height: $li;
+  font-weight: $fw;
+}
+
+@mixin main-font-bold ($fs:$default-fs, $li:$default-li, $fw:700) {
+  font-family: "MontserratBold", Arial, sans-serif;
+  font-size: $fs;
+  line-height: $li;
+  font-weight: $fw;
+}
+
+// Интерактивное подчеркивание по наведению - исчезновение
+// $fat - толщина линии подчеркивания
+// $bottom - расстояние от нижней границы ссылки, м/б отрицательным
+// $color - цвет ссылки до наведения
+// $color-hover - цвет во время наведения
+// $pos - позиция начала линии (по умолчанию слева 0, если есть иконка у ссылки,
+// можно ее не подчеркивать и задать смещение)
+// $width - ширина полосы подчеркивания (используется, если есть смещение, по умолчанию - 100%)
+@mixin underline-lose-hover ($fat, $bottom, $color, $color-hover, $pos:0, $width:100%) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    transform: scaleX(1);
+    height: $fat;
+    bottom: $bottom;
+    left: $pos;
+    background-color: $color;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:hover::before {
+    transform: scaleX(0);
+    transform-origin: bottom left;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+// Интерактивное подчеркивание по наведению - появление
+// $fat - толщина линии подчеркивания
+// $bottom - расстояние от нижней границы ссылки, м/б отрицательным
+// $color - цвет ссылки до наведения
+// $color-hover - цвет во время наведения
+// $pos - позиция начала линии (по умолчанию слева 0, если есть иконка у ссылки,
+// можно ее не подчеркивать и задать смещение)
+// $width - ширина полосы подчеркивания (используется, если есть смещение, по умолчанию - 100%)
+@mixin underline-appear-hover ($fat, $bottom, $color, $color-hover, $pos:0, $width:100%) {
+  color: $color;
+  text-decoration: none;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: $width;
+    transform: scaleX(0);
+    height: $fat;
+    bottom: $bottom;
+    left: $pos;
+    background-color: $color-hover;
+    transform-origin: bottom left;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover {
+    color: $color-hover;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+    background-color: $color-hover;
+    transform-origin: bottom left;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

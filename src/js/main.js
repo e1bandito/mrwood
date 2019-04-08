@@ -4,7 +4,9 @@
 // библиотеки/полифилы и т.д.
 
 //= libs/jquery.js
+//= libs/picturefill.js
+//= libs/fullpage.js
 
 // собственные файлы
 
-//= modules/test.js
+//= modules/fullpage.js

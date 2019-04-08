@@ -1,0 +1,13 @@
+.copyright {
+  color: $white;
+  @include main-font-bold(18px, 22px, 800);
+  letter-spacing: 2.57px;
+  margin: 0;
+  padding: 60px;
+}
+
+@media (max-width: $mobile-width) {
+  .copyright {
+    display: none;
+  }
+}
