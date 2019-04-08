@@ -710,6 +710,9 @@ html.fp-enabled,
   margin: -7px 0px 0px -7px;
   opacity: 1; }
 
+#fp-nav {
+  right: 30px; }
+
 @media (max-width: 768px) {
   #fp-nav {
     display: none; } }

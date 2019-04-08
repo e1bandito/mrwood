@@ -308,6 +308,10 @@ html.fp-enabled,
     opacity: 1;
 }
 
+#fp-nav {
+  right: 30px;
+}
+
 @media (max-width: $mobile-width) {
   #fp-nav {
     display: none;
