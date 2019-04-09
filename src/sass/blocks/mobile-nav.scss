@@ -4,6 +4,72 @@
 
 @media (max-width: $mobile-width) {
   .mobile-nav {
-    // display: block;
+    position: fixed;
+    display: none;
+    background-color: $menu-bg;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    overflow: auto;
+    padding-bottom: 70px;
+
+    &--open {
+      display: block;
+    }
+  }
+
+  .mobile-nav__list,
+  .mobile-nav__sublist {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .mobile-nav__list {
+    position: relative;
+    padding: 40px 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: $white;
+      width: 89.5%;
+      height: 3px;
+      bottom: 7px;
+      left: 20px;
+    }
+  }
+
+  .mobile-nav__sublist {
+    padding: 32px 20px;
+  }
+
+  .mobile-nav__item {
+    margin-bottom: 25px;
+  }
+
+  .mobile-nav__link {
+    color: $text-grey;
+    @include main-font-bold(35px, 43px, 800);
+    letter-spacing: 1px;
+
+    &--active {
+      color: $white;
+    }
+
+    &:active {
+      color: $white;
+
+    }
+  }
+
+  .mobile-nav__subitem {
+    margin-bottom: 25px;
+  }
+
+  .mobile-nav__sublink {
+    color: $white;
+    @include main-font-bold(25px, 30px, 800);
+    letter-spacing: 2.2px;
   }
 }

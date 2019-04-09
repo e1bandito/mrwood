@@ -778,6 +778,59 @@ html.fp-enabled,
 .mobile-nav {
   display: none; }
 
+@media (max-width: 768px) {
+  .mobile-nav {
+    position: fixed;
+    display: none;
+    background-color: #21252f;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    overflow: auto;
+    padding-bottom: 70px; }
+    .mobile-nav--open {
+      display: block; }
+  .mobile-nav__list,
+  .mobile-nav__sublist {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  .mobile-nav__list {
+    position: relative;
+    padding: 40px 20px; }
+    .mobile-nav__list::after {
+      position: absolute;
+      content: "";
+      background-color: #ffffff;
+      width: 89.5%;
+      height: 3px;
+      bottom: 7px;
+      left: 20px; }
+  .mobile-nav__sublist {
+    padding: 32px 20px; }
+  .mobile-nav__item {
+    margin-bottom: 25px; }
+  .mobile-nav__link {
+    color: #75737d;
+    font-family: "MontserratBold", Arial, sans-serif;
+    font-size: 35px;
+    line-height: 43px;
+    font-weight: 800;
+    letter-spacing: 1px; }
+    .mobile-nav__link--active {
+      color: #ffffff; }
+    .mobile-nav__link:active {
+      color: #ffffff; }
+  .mobile-nav__subitem {
+    margin-bottom: 25px; }
+  .mobile-nav__sublink {
+    color: #ffffff;
+    font-family: "MontserratBold", Arial, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 800;
+    letter-spacing: 2.2px; } }
+
 .page-header {
   width: 100%;
   display: -webkit-box;
@@ -786,12 +839,14 @@ html.fp-enabled,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 60px; }
+  padding: 60px;
+  z-index: 999; }
   .page-header img {
     display: block; }
 
 .page-header__nav-button,
-.page-header__phone-link {
+.page-header__phone-link,
+.page-header__button-text--close {
   display: none; }
 
 @media (max-width: 768px) {
@@ -842,6 +897,17 @@ html.fp-enabled,
       color: #fbc732; }
     .page-header__nav-button:active {
       opacity: 0.8; }
+    .page-header__nav-button--close {
+      padding-right: 51px; }
+      .page-header__nav-button--close::after {
+        background-image: url("../img/close-icon.svg");
+        width: 36px;
+        height: 36px;
+        right: 5px; }
+  .page-header__button-text--close-active {
+    display: block; }
+  .page-header__button-text--main-close {
+    display: none; }
   .page-header__phone-link {
     display: block;
     background-color: #232731;

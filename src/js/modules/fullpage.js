@@ -1,7 +1,9 @@
 'use strict';
 
 $( function() {
-  $('#fullpage').fullpage({
-    navigation: true
-	});
+  if ('#fullpage') {
+    $('#fullpage').fullpage({
+      navigation: true
+    });
+  }
 });
