@@ -7,6 +7,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &--dealer {
+    background-color: $menu-bg;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  &__dealer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .page-main__subnav {

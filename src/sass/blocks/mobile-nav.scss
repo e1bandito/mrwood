@@ -5,6 +5,8 @@
 @media (max-width: $mobile-width) {
   .mobile-nav {
     position: fixed;
+    bottom: 0;
+    left: 0;
     display: none;
     background-color: $menu-bg;
     width: 100%;

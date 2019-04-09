@@ -1,0 +1,73 @@
+.dealer {
+  width: 680px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-right: 210px;
+}
+
+.dealer__image {
+  margin-bottom: 48px;
+
+  & img {
+    display: block;
+    transform: scale(1.06);
+  }
+}
+
+.dealer__button {
+  margin-top: 138px;
+  padding: 20px 30px;
+}
+
+.dealer__list {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dealer__item {
+  width: 220px;
+  background-color: $card-bg;
+  border-radius: 10px;
+}
+
+.dealer__link {
+  padding: 40px 22px 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.dealer__item-image {
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 43px;
+}
+
+.dealer__link-title {
+  width: 100%;
+  color: $white;
+  @include main-font-bold(18px, 22px, 800);
+  margin: 0;
+  margin-bottom: 11px;
+}
+
+.dealer__text {
+  width: 100%;
+  color: $white;
+  margin: 0;
+  @include main-font-reg(14px, 18px, 600);
+  opacity: 0.5;
+}

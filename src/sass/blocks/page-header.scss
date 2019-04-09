@@ -8,6 +8,10 @@
   & img {
     display: block;
   }
+
+  &--dealer {
+    margin-bottom: 29px;
+  }
 }
 
 .page-header__nav-button,
@@ -20,7 +24,7 @@
 
 @media (max-width: $mobile-width) {
   .page-header {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     padding: 15px 16px;

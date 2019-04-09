@@ -1,0 +1,44 @@
+.field {
+  position: relative;
+  width: 550px;
+  height: 71px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.field__input {
+  width: 550px;
+  height: 73px;
+  border: none;
+  background-color: $menu-bg;
+  border-bottom: 2px solid $border-grey;
+  @include main-font-bold(18px, 22px, 800);
+  letter-spacing: 1.75px;
+  color: $white;
+  padding-top: 7px;
+  padding-left: 2px;
+}
+
+.field__label {
+  position: absolute;
+  left: 2px;
+  top: 28px;
+  color: $white;
+  opacity: 0.5;
+  @include main-font-reg(18px, 22px, 600);
+  letter-spacing: 1.75px;
+  transition: all 0.3s;
+}
+
+.field__input:focus + .field__label {
+  left: 0;
+  top: 0;
+  @include main-font-reg(14px, 18px, 500);
+}
+
+.field--filled > .field__label {
+  left: 0;
+  top: 0;
+  @include main-font-reg(14px, 18px, 500);
+}
