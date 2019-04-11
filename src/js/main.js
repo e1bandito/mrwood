@@ -12,3 +12,4 @@
 //= modules/fullpage.js
 //= modules/mobile-nav.js
 //= modules/field.js
+//= modules/tabs.js

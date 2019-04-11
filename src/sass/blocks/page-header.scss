@@ -12,6 +12,10 @@
   &--dealer {
     margin-bottom: 29px;
   }
+
+  &--buy {
+    margin-bottom: 4px;
+  }
 }
 
 .page-header__nav-button,
@@ -20,7 +24,11 @@
   display: none;
 }
 
-
+@media (max-width: $tablet-width) {
+  .page-header {
+    padding: 20px;
+  }
+}
 
 @media (max-width: $mobile-width) {
   .page-header {
@@ -34,6 +42,10 @@
     justify-content: flex-start;
 
     &--dealer {
+      margin-bottom: 0;
+    }
+
+    &--buy {
       margin-bottom: 0;
     }
   }

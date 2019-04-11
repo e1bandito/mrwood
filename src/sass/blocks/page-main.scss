@@ -14,6 +14,13 @@
     height: auto;
   }
 
+  &--buy {
+    background-color: $menu-bg;
+    min-height: 100vh;
+    justify-content: space-between;
+    height: auto;
+  }
+
   &__dealer-wrapper {
     display: flex;
     padding-left: 160px;
@@ -111,6 +118,10 @@
   .page-main__subnav {
     display: block;
     margin-bottom: auto;
+
+    &--buy {
+      margin-bottom: 30px;
+    }
   }
 
   .page-main__subnav-list {
