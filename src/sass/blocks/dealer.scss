@@ -1,18 +1,21 @@
 .dealer {
-  width: 680px;
+  max-width: 680px;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-right: 210px;
 }
 
 .dealer__image {
+  max-width: 441px;
+  width: 100%;
+  min-width: 345px;
   margin-bottom: 48px;
 
   & img {
     display: block;
-    transform: scale(1.06);
+    width: 100%;
   }
 }
 
@@ -22,18 +25,26 @@
 }
 
 .dealer__list {
-  width: 100%;
+  min-width: 100%;
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: space-between;
+  overflow-x: auto;
 }
 
 .dealer__item {
+  min-width: 220px;
   width: 220px;
   background-color: $card-bg;
   border-radius: 10px;
+  margin-right: 10px;
+
+  @media (max-width: 1700px) {
+    min-width: 200px;
+    width: 200px;
+  }
 }
 
 .dealer__link {
@@ -70,4 +81,60 @@
   margin: 0;
   @include main-font-reg(14px, 18px, 600);
   opacity: 0.5;
+}
+
+@media (max-width: $desktop-width) {
+  .dealer {
+    flex-direction: column;
+  }
+
+  .dealer__image {
+    margin-bottom: 0;
+  }
+
+  .dealer__button {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 55px;
+    padding: 16px 23px;
+  }
+
+  .dealer__list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 20px;
+  }
+
+  .dealer__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .dealer {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .dealer__image {
+    margin-top: 5px;
+    margin-left: 15px;
+    width: 355px;
+  }
+}
+
+@media (max-width: $full-mobile-width) {
+  .dealer__list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    padding-left: 20px;
+  }
+
+  .dealer__item {
+    width: 220px;
+    min-width: 220px;
+    margin-right: 13px;
+  }
 }

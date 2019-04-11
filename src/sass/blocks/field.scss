@@ -1,14 +1,15 @@
 .field {
   position: relative;
-  width: 550px;
-  height: 71px;
+  max-width: 550px;
+  width: 100%;
   padding: 0;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .field__input {
-  width: 550px;
+  width: 100%;
+  max-width: 550px;
   height: 73px;
   border: none;
   background-color: $menu-bg;
@@ -31,14 +32,31 @@
   transition: all 0.3s;
 }
 
-.field__input:focus + .field__label {
+.field__input:focus + .field__label,
+.field--filled > .field__label {
   left: 0;
   top: 0;
   @include main-font-reg(14px, 18px, 500);
 }
 
-.field--filled > .field__label {
-  left: 0;
-  top: 0;
-  @include main-font-reg(14px, 18px, 500);
+@media (max-width: $mobile-width) {
+  .field {
+    margin-bottom: 34px;
+  }
+
+  .field__input {
+    height: 50px;
+    padding-top: 0px;
+    padding-left: 2px;
+  }
+
+  .field__label {
+    top: 11px;
+    left: 0;
+  }
+
+  .field__input:focus + .field__label,
+  .field--filled > .field__label {
+    top: -14px;
+  }
 }

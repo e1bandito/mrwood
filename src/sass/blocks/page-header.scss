@@ -32,6 +32,10 @@
     border-radius: 15px 15px 0 0;
     align-items: center;
     justify-content: flex-start;
+
+    &--dealer {
+      margin-bottom: 0;
+    }
   }
 
   .page-header__logo {

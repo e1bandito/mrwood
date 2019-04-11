@@ -38,5 +38,9 @@
   .btn {
     @include main-font-bold(14px, 18px, 800);
     letter-spacing: 0.53px;
+
+    &--yellow {
+      padding: 16px 26px;
+    }
   }
 }
