@@ -1,0 +1,10 @@
+.catalog {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: $tablet-width) {
+  .catalog {
+    flex-direction: column;
+  }
+}

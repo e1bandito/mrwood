@@ -6,19 +6,11 @@
     <title>MR.Wood</title>
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
-  <body>
+  <body class="catalog">
 
-    <div id="fullpage">
-      <div class="section section--one">
-      </div>
-      <div class="section section--two">
-      </div>
-      <div class="section section--three">
-      </div>
-    </div>
-
-    <main class="page-main">
-      <header class="page-header">
+    <main class="page-main page-main--catalog">
+      <h1 class="visually-hidden">Каталог</h1>
+      <header class="page-header page-header--catalog">
         <div class="page-header__logo">
           <picture>
             <source srcset="img/logo.png 1x, img/logo@2x.png 2x">
@@ -27,25 +19,24 @@
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="main.html" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог</a></li>
             <li class="main-nav__item"><a href="dealer.html" class="main-nav__link">Стать дилером</a></li>
             <li class="main-nav__item"><a href="buy.html" class="main-nav__link">Где купить</a></li>
-            <li class="main-nav__item"><a href="buy.html" class="main-nav__link">Контакты</a></li>
-            <li class="main-nav__item"><a href="tel:+79999291206" class="main-nav__link">+7 (999) 929 – 12 – 06</a></li>
+            <li class="main-nav__item"><a href="contacts.html" class="main-nav__link">Контакты</a></li>
           </ul>
         </nav>
         <a href="tel:+79999291206" class="page-header__phone-link" aria-label="Позвонить"></a>
         <button class="page-header__nav-button" type="button"><span class="page-header__button-text--main">Главная</span><span class="page-header__button-text--close">Закрыть</span></button>
       </header>
 
-      <div class="page-main__subnav">
+      <div class="page-main__subnav page-main__subnav--buy">
         <ul class="page-main__subnav-list">
           <li class="page-main__subnav-item">
             <a href="dealer.html" class="page-main__subnav-link">Cтать дилером</a>
           </li>
           <li class="page-main__subnav-item">
-            <a href="buy.html" class="page-main__subnav-link">Где купить</a>
+            <a href="buy.html" class="page-main__subnav-link page-main__subnav-link--active">Где купить</a>
           </li>
           <li class="page-main__subnav-item">
             <a href="#" class="page-main__subnav-link">Контакты</a>
@@ -57,10 +48,10 @@
         <div class="mobile-nav__wrapper">
           <ul class="mobile-nav__list">
             <li class="mobile-nav__item">
-              <a href="#" class="mobile-nav__link mobile-nav__link--active">Главная</a>
+              <a href="main.html" class="mobile-nav__link">Главная</a>
             </li>
             <li class="mobile-nav__item">
-              <a href="catalog.html" class="mobile-nav__link">Каталог</a>
+              <a href="catalog.html" class="mobile-nav__link mobile-nav__link--active">Каталог</a>
             </li>
             <li class="mobile-nav__item">
               <a href="#" class="mobile-nav__link">Контакты</a>
@@ -83,16 +74,39 @@
         </div>
       </div>
 
-      <div class="page-main__wrapper">
+      <div class="product">
+        <ul class="product__list">
+          <li class="product__item"><a href="#" class="product__link product__link--active">Вуд Модерн-22</a></li>
+          <li class="product__item"><a href="#" class="product__link">Классико-12</a></li>
+          <li class="product__item"><a href="#" class="product__link">Легно-21</a></li>
+          <li class="product__item"><a href="#" class="product__link">Вуд Классик-53</a></li>
+        </ul>
 
-        <h1 class="page-main__title">Межкомнатные двери</h1>
+        <div class="product__card">
 
-        <a href="catalog.html" class="btn btn--page-main">Каталог</a>
+          <div class="product__img"></div>
 
+          <p class="product__country">
+            <span class="product__country-title">Производства</span>
+            <span class="product__country-text">Россия</span>
+          </p>
+
+          <p class="product__material">
+            <span class="product__material-title">Материал</span>
+            <span class="product__material-text">Брус хвойных пород</span>
+          </p>
+
+          <a href="#" class="product__card-link">Назад</a>
+        </div>
       </div>
 
-      <p class="copyright">&#169 2019 MR.WOOD</p>
     </main>
+
+    <div class="catalog-form">
+      <div class="catalog-form__inner">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, doloremque aliquid recusandae eaque, delectus voluptatem officiis reiciendis cupiditate perspiciatis consequatur soluta nobis sit in perferendis odit commodi aut sed et!
+      </div>
+    </div>
 
     <script src="./js/main.min.js"></script>
   </body>
