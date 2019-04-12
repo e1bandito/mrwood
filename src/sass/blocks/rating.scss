@@ -1,0 +1,27 @@
+.rating {
+  width: 100%;
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.rating__stars {
+  width: 95px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12px;
+}
+
+.rating__value {
+  margin: 0;
+}
+
+.rating__current-value {
+  @include main-font-bold(14px, 18px, 800);
+  color: $dark-yellow;
+}
+
+.rating__max-value {
+  @include main-font-reg(10px, 10px, 400);
+  margin-left: -2px;
+  color: $text-grey;
+}

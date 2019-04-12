@@ -6,6 +6,7 @@
 //= libs/jquery.js
 //= libs/picturefill.js
 //= libs/fullpage.js
+//= libs/slick.min.js
 
 // собственные файлы
 
@@ -13,3 +14,4 @@
 //= modules/mobile-nav.js
 //= modules/field.js
 //= modules/tabs.js
+//= modules/sliders.js
