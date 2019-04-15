@@ -18,10 +18,17 @@
   }
 }
 
-.page-header--catalog .page-header__logo {
+.page-header--product-card .page-header__logo {
 
   &--black {
     display: none;
+  }
+}
+
+.page-header--catalog .page-header__logo {
+
+  &--black {
+    display: block;
   }
 }
 
@@ -56,9 +63,23 @@
       margin-bottom: 0;
     }
 
+    &--product-card {
+      background-color: $white;
+      box-shadow: 0px 0px 62px #dadde8;
+
+      & .page-header__nav-button--close {
+        &::after {
+          background-image: url("../img/close-icon-black.svg");
+          width: 36px;
+          height: 36px;
+          right: 5px;
+        }
+      }
+    }
+
     &--catalog {
       background-color: $white;
-      box-shadow: 0px 0px 62px #DADDE8;
+      box-shadow: 0px 0px 62px #dadde8;
 
       & .page-header__nav-button--close {
         &::after {
@@ -76,7 +97,7 @@
     height: 12px;
   }
 
-  .page-header--catalog .page-header__logo {
+  .page-header--product-card .page-header__logo {
     display: none;
 
     &--black {
@@ -130,7 +151,7 @@
       }
     }
 
-    &--catalog {
+    &--product-card {
       background-color: $light-menu-bg;
       color: $black;
 
@@ -170,7 +191,7 @@
       opacity: 0.8;
     }
 
-    &--catalog {
+    &--product-card {
       background-color: $light-menu-bg;
       background-image: url("../img/phone-icon-black.svg");
     }

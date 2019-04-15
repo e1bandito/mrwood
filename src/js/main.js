@@ -7,6 +7,7 @@
 //= libs/picturefill.js
 //= libs/fullpage.js
 //= libs/slick.min.js
+//= libs/nouislider.min.js
 
 // собственные файлы
 
@@ -16,3 +17,4 @@
 //= modules/tabs.js
 //= modules/sliders.js
 //= modules/accordion.js
+//= modules/nouislider.js

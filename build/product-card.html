@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR.Wood</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+  </head>
+  <body class="product-card">
+
+    <main class="page-main page-main--product-card">
+      <h1 class="visually-hidden">Карточка товара</h1>
+      <header class="page-header page-header--product-card">
+        <div class="page-header__logo">
+          <picture>
+            <source srcset="img/logo.png 1x, img/logo@2x.png 2x">
+            <img class="page-header__img" src="img/logo.png" alt="Mr.Wood">
+          </picture>
+        </div>
+        <div class="page-header__logo page-header__logo--black">
+          <picture>
+            <source srcset="img/logo-black.png 1x, img/logo-black@2x.png 2x">
+            <img class="page-header__img" src="img/logo-black.png" alt="Mr.Wood">
+          </picture>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="main.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог</a></li>
+            <li class="main-nav__item"><a href="dealer.html" class="main-nav__link">Стать дилером</a></li>
+            <li class="main-nav__item"><a href="buy.html" class="main-nav__link">Где купить</a></li>
+            <li class="main-nav__item"><a href="contacts.html" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <a href="tel:+79999291206" class="page-header__phone-link page-header__phone-link--product-card" aria-label="Позвонить"></a>
+        <button class="page-header__nav-button page-header__nav-button--product-card" type="button"><span class="page-header__button-text page-header__button-text--main">Каталог</span><span class="page-header__button-text page-header__button-text--close">Закрыть</span></button>
+      </header>
+
+      <div class="page-main__subnav page-main__subnav--buy">
+        <ul class="page-main__subnav-list">
+          <li class="page-main__subnav-item">
+            <a href="dealer.html" class="page-main__subnav-link">Cтать дилером</a>
+          </li>
+          <li class="page-main__subnav-item">
+            <a href="buy.html" class="page-main__subnav-link">Где купить</a>
+          </li>
+          <li class="page-main__subnav-item">
+            <a href="#" class="page-main__subnav-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mobile-nav">
+        <div class="mobile-nav__wrapper">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="main.html" class="mobile-nav__link">Главная</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="catalog.html" class="mobile-nav__link mobile-nav__link--active">Каталог</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Контакты</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="buy.html" class="mobile-nav__link">Где купить</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="dealer.html" class="mobile-nav__link">Стать дилером</a>
+            </li>
+          </ul>
+          <ul class="mobile-nav__sublist">
+            <li class="mobile-nav__subitem">
+              <a href="tel:+79999291206" class="mobile-nav__sublink">+7 (999) 929 – 12 – 06</a>
+            </li>
+            <li class="mobile-nav__subitem">
+              <a href="#" class="mobile-nav__sublink">mr.wood@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product">
+        <ul class="product__list">
+          <li class="product__item"><a href="#" class="product__link product__link--active">Вуд Модерн-22</a></li>
+          <li class="product__item"><a href="#" class="product__link">Классико-12</a></li>
+          <li class="product__item"><a href="#" class="product__link">Легно-21</a></li>
+          <li class="product__item"><a href="#" class="product__link">Вуд Классик-53</a></li>
+        </ul>
+
+        <div class="product__card">
+
+          <div class="product__img"></div>
+
+          <p class="product__country">
+            <span class="product__country-title">Производства</span>
+            <span class="product__country-text">Россия</span>
+          </p>
+
+          <p class="product__material">
+            <span class="product__material-title">Материал</span>
+            <span class="product__material-text">Брус хвойных пород</span>
+          </p>
+
+          <a href="#" class="product__card-link">Назад</a>
+        </div>
+      </div>
+
+    </main>
+
+    <section class="product-form">
+      <div class="product-form__inner">
+        <p class="product-form__series">Серия Wood Modern</p>
+        <h2 class="product-form__title">Вуд Модерн-22</h2>
+
+        <div class="product-form__wrapper">
+
+          <div class="product-form__color">
+            <p class="product-form__color-title">Цвет</p>
+            <p class="product-form__checkbox-wrapper">
+              <input type="radio" name="color" id="first-color" value="first-color" class="product-form__color-checkbox visually-hidden" checked="">
+              <label class="product-form__color-label product-form__color-label--brown" for="first-color" aria-label="first-color"></label>
+            </p>
+            <p class="product-form__checkbox-wrapper">
+              <input type="radio" name="color" id="second-color" value="second-color" class="product-form__color-checkbox visually-hidden">
+              <label class="product-form__color-label product-form__color-label--light-brown" for="second-color" aria-label="second-color"></label>
+            </p>
+            <p class="product-form__checkbox-wrapper">
+              <input type="radio" name="color" id="third-color" value="third-color" class="product-form__color-checkbox visually-hidden">
+              <label class="product-form__color-label product-form__color-label--dark-brown" for="third-color" aria-label="third-color"></label>
+            </p>
+          </div>
+
+          <div class="product-form__vendor-code">
+            <p class="product-form__vendor-code-title">Артикул</p>
+            <p class="product-form__vendor-code-value">126-0001</p>
+          </div>
+
+        </div>
+
+        <div class="product-form__size">
+          <p class="product-form__size-title">Размер</p>
+
+          <div class="product-form__size-wrapper">
+
+            <p class="product-form__size-checkbox">
+              <input type="radio" name="size" id="first-size" value="first-size" class="product-form__size-checkbox visually-hidden" checked="">
+              <label class="product-form__size-label" for="first-size" aria-label="first-size">200 &#149; 60</label>
+            </p>
+            <p class="product-form__size-checkbox">
+              <input type="radio" name="size" id="second-size" value="second-size" class="product-form__size-checkbox visually-hidden">
+              <label class="product-form__size-label" for="second-size" aria-label="second-size">200 &#149; 70</label>
+            </p>
+            <p class="product-form__size-checkbox">
+              <input type="radio" name="size" id="third-size" value="third-size" class="product-form__size-checkbox visually-hidden">
+              <label class="product-form__size-label" for="third-size" aria-label="third-size">200 &#149; 80</label>
+            </p>
+            <p class="product-form__size-checkbox">
+              <input type="radio" name="size" id="fourth-size" value="fourth-size" class="product-form__size-checkbox visually-hidden">
+              <label class="product-form__size-label" for="fourth-size" aria-label="fourth-size">200 &#149; 90</label>
+            </p>
+
+          </div>
+        </div>
+
+        <div class="product-form__prices">
+
+          <div class="price">
+            <p class="price__title">За полотно</p>
+            <p class="price__value"><span class="price__value-bold">5 920</span>.00 &#8381;</p>
+          </div>
+
+          <div class="price price--right-align">
+            <p class="price__title">За комплект</p>
+            <p class="price__value"><span class="price__value-bold">7 920</span>.00 &#8381;</p>
+          </div>
+
+          <a href="#" class="product-form__prices-btn btn btn--yellow">Получить оптовые цены</a>
+        </div>
+
+        <div class="product-form__tabs">
+          <ul class="product-form__tabs-switcher">
+            <li class="product-form__tabs-switcher-item product-form__tabs-switcher-item--active">Описание</li>
+            <li class="product-form__tabs-switcher-item">Комплектующие</li>
+            <li class="product-form__tabs-switcher-item">Дополнительно</li>
+          </ul>
+          <ul class="product-form__tabs-content">
+            <li class="product-form__tabs-content-item product-form__tabs-content-item--active">
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Описание</p>
+                <p class="product-form__tab-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Материал</p>
+                <p class="product-form__tab-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Отделка</p>
+                <p class="product-form__tab-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </li>
+            <li class="product-form__tabs-content-item">
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Описание</p>
+                <p class="product-form__tab-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Материал</p>
+                <p class="product-form__tab-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Отделка</p>
+                <p class="product-form__tab-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </li>
+            <li class="product-form__tabs-content-item">
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Описание</p>
+                <p class="product-form__tab-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Материал</p>
+                <p class="product-form__tab-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="product-form__tab-content">
+                <p class="product-form__tab-title">Отделка</p>
+                <p class="product-form__tab-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion__item accordion__item--active">
+            <div class="accordion__header accordion__header--active">Описание</div>
+            <div class="accordion__body accordion__body--active">
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Описание</p>
+                <p class="accordion__content-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Материал</p>
+                <p class="accordion__content-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Отделка</p>
+                <p class="accordion__content-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">Комплектующие</div>
+            <div class="accordion__body">
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Описание</p>
+                <p class="accordion__content-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Материал</p>
+                <p class="accordion__content-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Отделка</p>
+                <p class="accordion__content-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <div class="accordion__header">Дополнительно</div>
+            <div class="accordion__body">
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Описание</p>
+                <p class="accordion__content-text">Межкомнатная дверь серии Wood Modern с&nbsp;отделкой натуральным шпоном</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Материал</p>
+                <p class="accordion__content-text">брус хвойных пород, MDF</p>
+              </div>
+              <div class="accordion__content-item">
+                <p class="accordion__content-title">Отделка</p>
+                <p class="accordion__content-text">натуральный шпон дуба, двухкомпонентная акриловая эмаль</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-form__slider product-form__slider--card">
+          <h3 class="product-form__slider-title">Другие предложения</h3>
+
+          <div class="product-form__slider-inner product-form__slider-inner--other">
+            <div class="product-form__slider-item">
+              <div class="card">
+                <div class="card__img">
+                  <picture>
+                    <source srcset="img/woodmodern22.png 1x, img/woodmodern22@2x.png 2x">
+                    <img src="img/woodmodern22.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <div class="rating">
+                  <div class="rating__stars">
+                    <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                  </div>
+                  <p class="rating__value">
+                    <span class="rating__current-value">4.9</span>
+                    <span class="rating__max-value">/ 5.0</span>
+                  </p>
+                </div>
+                <h4 class="card__title">Вуд Модерн-22</h4>
+                <div class="card__price"><span class="card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="card__link" aria-label="Подробнее"></a>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="card">
+                <div class="card__img">
+                  <picture>
+                    <source srcset="img/woodmodern25.png 1x, img/woodmodern25@2x.png 2x">
+                    <img src="img/woodmodern25.png" alt="woodmodern25">
+                  </picture>
+                </div>
+                <div class="rating">
+                  <div class="rating__stars">
+                    <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                  </div>
+                  <p class="rating__value">
+                    <span class="rating__current-value">4.9</span>
+                    <span class="rating__max-value">/ 5.0</span>
+                  </p>
+                </div>
+                <h4 class="card__title">Вуд Модерн-25</h4>
+                <div class="card__price"><span class="card__price-bold">786 920</span>.00 ₽</div>
+                <a href="#" class="card__link" aria-label="Подробнее"></a>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="card">
+                <div class="card__img">
+                  <picture>
+                    <source srcset="img/woodloder213.png 1x, img/woodloder213@2x.png 2x">
+                    <img src="img/woodloder213.png" alt="woodloder213">
+                  </picture>
+                </div>
+                <div class="rating">
+                  <div class="rating__stars">
+                    <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                  </div>
+                  <p class="rating__value">
+                    <span class="rating__current-value">4.9</span>
+                    <span class="rating__max-value">/ 5.0</span>
+                  </p>
+                </div>
+                <h4 class="card__title">Вуд Лодер-213</h4>
+                <div class="card__price"><span class="card__price-bold">21 920</span>.00 ₽</div>
+                <a href="#" class="card__link" aria-label="Подробнее"></a>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+                <div class="card">
+                  <div class="card__img">
+                    <picture>
+                      <source srcset="img/woodmodern22.png 1x, img/woodmodern22@2x.png 2x">
+                      <img src="img/woodmodern22.png" alt="woodmodern22">
+                    </picture>
+                  </div>
+                  <div class="rating">
+                    <div class="rating__stars">
+                      <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                      <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                      <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                      <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                      <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                    </div>
+                    <p class="rating__value">
+                      <span class="rating__current-value">4.9</span>
+                      <span class="rating__max-value">/ 5.0</span>
+                    </p>
+                  </div>
+                  <h4 class="card__title">Вуд Модерн-22</h4>
+                  <div class="card__price"><span class="card__price-bold">7 920</span>.00 ₽</div>
+                  <a href="#" class="card__link" aria-label="Подробнее"></a>
+                </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="card">
+                <div class="card__img">
+                  <picture>
+                    <source srcset="img/woodmodern25.png 1x, img/woodmodern25@2x.png 2x">
+                    <img src="img/woodmodern25.png" alt="woodmodern25">
+                  </picture>
+                </div>
+                <div class="rating">
+                  <div class="rating__stars">
+                    <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                  </div>
+                  <p class="rating__value">
+                    <span class="rating__current-value">4.9</span>
+                    <span class="rating__max-value">/ 5.0</span>
+                  </p>
+                </div>
+                <h4 class="card__title">Вуд Модерн-25</h4>
+                <div class="card__price"><span class="card__price-bold">786 920</span>.00 ₽</div>
+                <a href="#" class="card__link" aria-label="Подробнее"></a>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="card">
+                <div class="card__img">
+                  <picture>
+                    <source srcset="img/woodloder213.png 1x, img/woodloder213@2x.png 2x">
+                    <img src="img/woodloder213.png" alt="woodloder213">
+                  </picture>
+                </div>
+                <div class="rating">
+                  <div class="rating__stars">
+                    <img src="img/rating-star.svg" alt="first-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="second-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="third-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fourth-star" width="16" height="16">
+                    <img src="img/rating-star.svg" alt="fifth-star" width="16" height="16">
+                  </div>
+                  <p class="rating__value">
+                    <span class="rating__current-value">4.9</span>
+                    <span class="rating__max-value">/ 5.0</span>
+                  </p>
+                </div>
+                <h4 class="card__title">Вуд Лодер-213</h4>
+                <div class="card__price"><span class="card__price-bold">21 920</span>.00 ₽</div>
+                <a href="#" class="card__link" aria-label="Подробнее"></a>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="product-form__slider-controls product-form__slider-controls--other">
+            <button class="product-form__slider-button product-form__slider-button--other-prev" aria-label="previous"></button>
+            <button class="product-form__slider-button product-form__slider-button--other-next" aria-label="next"></button>
+          </div>
+
+        </div>
+
+        <div class="product-form__slider product-form__slider--molding">
+          <h3 class="product-form__slider-title">Погонаж телескопический</h3>
+
+          <div class="product-form__slider-inner product-form__slider-inner--molding">
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-1.png 1x, img/molding-1@2x.png 2x">
+                    <img src="img/molding-1.png" alt="molding-1">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Коробка “Т” МДФ 2050*70*35 (у,п)</p>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-2.png 1x, img/molding-2@2x.png 2x">
+                    <img src="img/molding-2.png" alt="molding-2">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Наличник “Т” Тип-0 2140*75*10</p>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-3.png 1x, img/molding-3@2x.png 2x">
+                    <img src="img/molding-3.png" alt="molding-3">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Наличник “Т” Тип-2 2140*75*10</p>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-1.png 1x, img/molding-1@2x.png 2x">
+                    <img src="img/molding-1.png" alt="molding-1">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Коробка “Т” МДФ 2050*70*35 (у,п)</p>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-2.png 1x, img/molding-2@2x.png 2x">
+                    <img src="img/molding-2.png" alt="molding-2">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Наличник “Т” Тип-0 2140*75*10</p>
+              </div>
+            </div>
+            <div class="product-form__slider-item">
+              <div class="molding-card">
+                <div class="molding-card__img">
+                  <picture>
+                    <source srcset="img/molding-3.png 1x, img/molding-3@2x.png 2x">
+                    <img src="img/molding-3.png" alt="molding-3">
+                  </picture>
+                </div>
+                <p class="molding-card__text">Наличник “Т” Тип-2 2140*75*10</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-form__slider-controls product-form__slider-controls--molding">
+            <button class="product-form__slider-button product-form__slider-button--molding-prev" aria-label="previous"></button>
+            <button class="product-form__slider-button product-form__slider-button--molding-next" aria-label="next"></button>
+          </div>
+
+        </div>
+
+        <div class="product-form__scheme">
+          <h3 class="product-form__scheme-title">Схема монтажа межкомнатных дверей</h3>
+          <div class="product-form__scheme-wrapper">
+            <div class="product-form__scheme-img">
+              <picture>
+                <source srcset="img/scheme-1.png 1x, img/scheme-1@2x.png 2x">
+                <img src="img/scheme-1.png" alt="схема-1">
+              </picture>
+            </div>
+            <div class="product-form__scheme-img">
+              <picture>
+                <source srcset="img/scheme-2.png 1x, img/scheme-2@2x.png 2x">
+                <img src="img/scheme-2.png" alt="схема-2">
+              </picture>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <script src="./js/main.min.js"></script>
+  </body>
+</html>

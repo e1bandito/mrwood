@@ -21,13 +21,18 @@
     height: auto;
   }
 
-  &--catalog {
+  &--product-card {
     position: relative;
     background-color: $menu-bg;
     min-height: 100vh;
     justify-content: space-between;
     height: auto;
     width: 59.6%;
+  }
+
+  &--catalog {
+    position: relative;
+    height: auto;
   }
 
   &__dealer-wrapper {
@@ -47,6 +52,10 @@
 
 .page-main__subnav {
   display: none;
+
+  &--white .page-main__subnav-link {
+    color: $text-color;
+  }
 }
 
 .page-main__wrapper {
@@ -78,7 +87,7 @@
 
   .page-main {
 
-    &--catalog {
+    &--product-card {
       width: 100%;
       justify-content: flex-start;
       min-height: auto;
@@ -108,7 +117,7 @@
   .page-main {
     justify-content: flex-end;
 
-    &--catalog {
+    &--product-card {
       width: 100%;
       justify-content: flex-start;
       min-height: auto;

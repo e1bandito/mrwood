@@ -1,0 +1,56 @@
+.sort {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 60px;
+}
+
+.sort__select {
+  width: 282px;
+  height: 52px;
+  border: none;
+  border-radius: 4px;
+  background-color: $select-bg;
+  appearance: none;
+  padding-left: 25px;
+  @include main-font-reg(18px, 22px, 600);
+  color: $text-color;
+  cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
+}
+
+.sort__text {
+  @include main-font-bold(18px, 22px, 900);
+  color: $text-color;
+}
+
+.sort__wrapper {
+  display: inline-block;
+  position: relative;
+  margin-left: 25px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 12px;
+    right: 23px;
+    top: 20px;
+    background-image: url("../img/card-arrow-link.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    transform: rotate(90deg);
+    transition: all 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 0.7;
+  }
+}
+
+.sort__list {
+  display: none;
+}

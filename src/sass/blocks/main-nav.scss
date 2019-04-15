@@ -1,3 +1,8 @@
+.main-nav--white .main-nav__link {
+  color: $text-color;
+  @include underline-appear-hover(3px, -8px, $text-color, $text-color);
+}
+
 .main-nav__list {
   list-style: none;
   padding: 0;
