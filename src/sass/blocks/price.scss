@@ -1,5 +1,6 @@
 .price {
   margin-right: 40px;
+  margin-bottom: 30px;
 }
 
 .price__title {
@@ -20,5 +21,24 @@
     @include main-font-bold(30px, 37px, 800);
     letter-spacing: 1.16px;
     color: $text-color;
+  }
+}
+
+@media (max-width: 500px) {
+  .price {
+    margin-right: 0;
+
+    &--right-align {
+      text-align: right;
+    }
+  }
+
+  .price__title {
+    margin-bottom: 10px;
+  }
+
+  .price__value-bold {
+    @include main-font-bold(21px, 25px, 800);
+    letter-spacing: 1.16px;
   }
 }

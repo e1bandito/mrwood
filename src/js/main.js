@@ -15,3 +15,4 @@
 //= modules/field.js
 //= modules/tabs.js
 //= modules/sliders.js
+//= modules/accordion.js

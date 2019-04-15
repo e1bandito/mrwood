@@ -18,6 +18,13 @@
   }
 }
 
+.page-header--catalog .page-header__logo {
+
+  &--black {
+    display: none;
+  }
+}
+
 .page-header__nav-button,
 .page-header__phone-link,
 .page-header__button-text--close {
@@ -48,11 +55,33 @@
     &--buy {
       margin-bottom: 0;
     }
+
+    &--catalog {
+      background-color: $white;
+      box-shadow: 0px 0px 62px #DADDE8;
+
+      & .page-header__nav-button--close {
+        &::after {
+          background-image: url("../img/close-icon-black.svg");
+          width: 36px;
+          height: 36px;
+          right: 5px;
+        }
+      }
+    }
   }
 
   .page-header__logo {
     width: 85px;
     height: 12px;
+  }
+
+  .page-header--catalog .page-header__logo {
+    display: none;
+
+    &--black {
+      display: block;
+    }
   }
 
   .page-header__nav-button {
@@ -100,6 +129,19 @@
         right: 5px;
       }
     }
+
+    &--catalog {
+      background-color: $light-menu-bg;
+      color: $black;
+
+      &::after {
+        background-image: url("../img/menu-icon-black.svg");
+      }
+
+      &:hover {
+        color: $text-color;
+      }
+    }
   }
 
   .page-header__button-text {
@@ -126,6 +168,11 @@
 
     &:active {
       opacity: 0.8;
+    }
+
+    &--catalog {
+      background-color: $light-menu-bg;
+      background-image: url("../img/phone-icon-black.svg");
     }
   }
 }
