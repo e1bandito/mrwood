@@ -8,6 +8,7 @@
 //= libs/fullpage.js
 //= libs/slick.min.js
 //= libs/nouislider.min.js
+//= libs/wNumb.js
 
 // собственные файлы
 
@@ -18,3 +19,4 @@
 //= modules/sliders.js
 //= modules/accordion.js
 //= modules/nouislider.js
+//= modules/filter-nav.js

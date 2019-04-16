@@ -1,12 +1,64 @@
 .filter {
+  width: 400px;
   margin-left: 60px;
+  padding-top: 92px;
+  margin-right: 55px;
+}
+
+.filter__door-type {
+  margin-bottom: 55px;
+}
+
+.filter__title {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  @include main-font-reg(30px, 37px, 800);
+  letter-spacing: normal;
+  color: $text-color;
+  padding-left: 3px;
+  margin-bottom: 36px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 4px;
+    right: -36px;
+    top: 19px;
+    background-color: $text-color;
+  }
+}
+
+.filter__subtitle {
+  @include main-font-bold(18px, 22px, 700);
+  color: $text-color;
+  padding-left: 3px;
+  margin: 0;
+  margin-bottom: 31px;
+
+  &--color {
+    margin-bottom: 19px;
+  }
+}
+
+.filter__style {
+  margin-bottom: 35px;
+}
+
+.filter__color {
+  padding-left: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
 }
 
 .filter__price-slider {
-  width: 400px;
+  width: 100%;
   border-radius: 1px;
   border: none;
   background-color: $lightest-grey;
+  margin-bottom: 71px;
 
   & .noUi-connect {
     background-color: $yellow;
@@ -37,8 +89,118 @@
   & .noUi-tooltip {
     @include main-font-reg(16px, 19px, 600);
     color: $noui-slider-text;
-    bottom: -35px;
+    bottom: -39px;
     border: none;
-    background-color: transparent;
+    background-color: $bg-color;
+  }
+}
+
+.filter__controls {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .filter {
+    width: 332px;
+    margin-right: 30px;
+  }
+
+  .filter__title {
+    @include main-font-reg(21px, 25px, 800);
+
+    &::after {
+      top: 13px;
+    }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .filter {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .filter {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(34, 38, 47, 0.7);
+    padding: 0;
+    margin: 0;
+
+    &--active {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+
+  .filter__color {
+    margin-bottom: 0;
+  }
+
+  .filter__title {
+    display: block;
+
+    &::after {
+      right: 0;
+      top: 19px;
+    }
+  }
+
+  .filter__wrapper {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    max-height: 100vh;
+    background-color: $bg-color;
+    padding-bottom: 110px;
+    border-radius: 15px 15px 0px 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    overflow-y: auto;
+  }
+
+  .filter__controls {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: $white;
+    box-shadow: 0px 0px 62px #DADDE8;
+    border-radius: 15px 15px 0px 0px;
+    padding: 22px 20px;
+    padding-top: 23px;
+  }
+
+  .filter__controls-text {
+    @include main-font-bold(21px, 25px, 800);
+    color: $text-color;
+    margin: 0;
+  }
+
+  .filter__controls-button {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    background-color: $light-menu-bg;
+    cursor: pointer;
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

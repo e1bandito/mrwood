@@ -35,6 +35,10 @@
     height: auto;
   }
 
+  &__catalog-wrapper {
+    display: flex;
+  }
+
   &__dealer-wrapper {
     display: flex;
     padding-left: 160px;
@@ -166,6 +170,11 @@
     padding: 0;
     padding-bottom: 18px;
     border-bottom: 1px solid $light-grey;
+
+    &--catalog {
+      margin: 0;
+      padding: 20px;
+    }
   }
 
   .page-main__subnav-link {

@@ -1,0 +1,10 @@
+.product-card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+@media (max-width: $tablet-width) {
+  .product-card {
+    flex-direction: column;
+  }
+}

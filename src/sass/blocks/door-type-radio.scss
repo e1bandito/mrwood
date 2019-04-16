@@ -1,0 +1,27 @@
+.door-type-radio {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.door-type-radio__label {
+  @include main-font-reg(30px, 37px, 600);
+  letter-spacing: 1.3px;
+  color: $text-color;
+  cursor: pointer;
+  padding-left: 3px;
+}
+
+.door-type-radio__input:checked ~ .door-type-radio__label {
+  font-weight: 800;
+  letter-spacing: normal;
+}
+
+@media (max-width: 1200px) {
+  .door-type-radio {
+    margin-bottom: 30px;
+  }
+
+  .door-type-radio__label {
+    @include main-font-reg(21px, 25px, 600);
+  }
+}

@@ -6,7 +6,7 @@
     <title>MR.Wood</title>
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
-  <body class="catalog">
+  <body>
 
     <main class="page-main page-main--catalog">
       <h1 class="visually-hidden">Каталог</h1>
@@ -28,11 +28,11 @@
           </ul>
         </nav>
         <a href="tel:+79999291206" class="page-header__phone-link page-header__phone-link--product-card" aria-label="Позвонить"></a>
-        <button class="page-header__nav-button page-header__nav-button--product-card" type="button"><span class="page-header__button-text--main">Каталог</span><span class="page-header__button-text--close">Закрыть</span></button>
+        <button class="page-header__nav-button page-header__nav-button--product-card" type="button"><span class="page-header__button-text page-header__button-text--main">Каталог</span><span class="page-header__button-text page-header__button-text--close">Закрыть</span></button>
       </header>
 
       <div class="page-main__subnav page-main__subnav--white">
-        <ul class="page-main__subnav-list">
+        <ul class="page-main__subnav-list page-main__subnav-list--catalog">
           <li class="page-main__subnav-item">
             <a href="dealer.html" class="page-main__subnav-link">Cтать дилером</a>
           </li>
@@ -75,36 +75,291 @@
         </div>
       </div>
 
+      <div class="catalog-controls">
+        <button type="button" class="catalog-controls__button catalog-controls__button--sort">Сортировать</button>
+        <button type="button" class="catalog-controls__button catalog-controls__button--filter">Фильтровать</button>
+      </div>
+
       <section class="sort">
-        <h2 class="visually-hidden">Каталог</h2>
-        <p class="sort__text">Сортировать по</p>
-        <div class="sort__wrapper">
-          <select name="catalog-sort" id="catalog-sort" class="sort__select">
-            <option value="default">Умолчанию</option>
-            <option value="low-price">Сначала дешевые</option>
-            <option value="high-price">Сначала дорогие</option>
-            <option value="new">Новинка</option>
-          </select>
+        <h2 class="visually-hidden">Сортировать</h2>
+        <div class="sort__desktop">
+          <p class="sort__text">Сортировать по</p>
+          <div class="sort__wrapper">
+            <select name="catalog-sort" id="catalog-sort" class="sort__select">
+              <option value="default">Умолчанию</option>
+              <option value="low-price">Сначала дешевые</option>
+              <option value="high-price">Сначала дорогие</option>
+              <option value="new">Новинка</option>
+            </select>
+          </div>
         </div>
-        <ul class="sort__list">
-          <li class="sort__item">По умолчанию</li>
-          <li class="sort__item">Сначала дешевые</li>
-          <li class="sort__item">Сначала дорогие</li>
-          <li class="sort__item">Новинка</li>
-        </ul>
+        <div class="sort__mobile">
+          <div class="sort__list">
+            <p class="sort-radio">
+              <input id="default" type="radio" value="default" name="sort" class="sort-radio__input visually-hidden" checked>
+              <label for="default" class="sort-radio__label" aria-label="default">По умолчанию</label>
+            </p>
+            <p class="sort-radio">
+              <input id="low-price" type="radio" value="low-price" name="sort" class="sort-radio__input visually-hidden">
+              <label for="low-price" class="sort-radio__label" aria-label="low-price">Сначала дешевые</label>
+            </p>
+            <p class="sort-radio">
+              <input id="high-pricesort" type="radio" value="high-pricesort" name="sort" class="sort-radio__input visually-hidden">
+              <label for="high-pricesort" class="sort-radio__label" aria-label="high-pricesort">Сначала дорогие</label>
+            </p>
+            <p class="sort-radio">
+              <input id="new" type="radio" value="new" name="sort" class="sort-radio__input visually-hidden">
+              <label for="new" class="sort-radio__label" aria-label="new">Новинка</label>
+            </p>
+          </div>
+          <div class="sort__controls">
+            <p class="sort__controls-text">Сортировать</p>
+            <button type="button" class="sort__controls-button" aria-label="Закрыть"></button>
+          </div>
+        </div>
       </section>
 
-      <section class="filter">
-        <ul class="filter__list">
-          <li class="filter__item">Межкомнатные двери</li>
-          <li class="filter__item">Складные двери</li>
-          <li class="filter__item">Складные двери</li>
-          <li class="filter__item">Арки и порталы</li>
-        </ul>
-        <h2 class="filter__title">Фильтры</h2>
-        <h3 class="filter__subtitle">Цена</h3>
-        <div class="filter__price-slider"></div>
-      </section>
+      <div class="page-main__catalog-wrapper">
+        <section class="filter">
+          <div class="filter__wrapper">
+            <div class="filter__door-type">
+              <p class="door-type-radio">
+                <input id="first-type" type="radio" value="first-type" name="door-type" class="door-type-radio__input visually-hidden" checked>
+                <label for="first-type" class="door-type-radio__label" aria-label="first-type">Межкомнатные двери</label>
+              </p>
+              <p class="door-type-radio">
+                <input id="second-type" type="radio" value="second-type" name="door-type" class="door-type-radio__input visually-hidden">
+                <label for="second-type" class="door-type-radio__label" aria-label="second-type">Складные двери</label>
+              </p>
+              <p class="door-type-radio">
+                <input id="third-type" type="radio" value="third-type" name="door-type" class="door-type-radio__input visually-hidden">
+                <label for="third-type" class="door-type-radio__label" aria-label="third-type">Складные двери</label>
+              </p>
+              <p class="door-type-radio">
+                <input id="fourth-type" type="radio" value="fourth-type" name="door-type" class="door-type-radio__input visually-hidden">
+                <label for="fourth-type" class="door-type-radio__label" aria-label="fourth-type">Арки и порталы</label>
+              </p>
+            </div>
+
+
+            <h2 class="filter__title">Фильтры</h2>
+            <h3 class="filter__subtitle">Цена</h3>
+            <div class="filter__price-slider"></div>
+            <h3 class="filter__subtitle">Стиль</h3>
+
+            <div class="filter__style">
+              <p class="style-checkbox">
+                <input id="first-style" type="checkbox" name="first-style" class="style-checkbox__input visually-hidden" checked>
+                <label for="first-style" class="style-checkbox__label">Классика</label>
+              </p>
+              <p class="style-checkbox">
+                <input id="second-style" type="checkbox" name="second-style" class="style-checkbox__input visually-hidden">
+                <label for="second-style" class="style-checkbox__label">Модерн</label>
+              </p>
+            </div>
+
+            <h3 class="filter__subtitle filter__subtitle--color">Цвет</h3>
+            <div class="filter__color">
+              <p class="color-checkbox">
+                <input id="first-color" type="checkbox" name="first-color"  class="color-checkbox__input visually-hidden" checked>
+                <label for="first-color" class="color-checkbox__label color-checkbox__label--black" aria-label="first-color"></label>
+              </p>
+              <p class="color-checkbox">
+                <input id="second-color" type="checkbox" name="second-color" class="color-checkbox__input visually-hidden">
+                <label for="second-color" class="color-checkbox__label color-checkbox__label--light-grey" aria-label="second-style"></label>
+              </p>
+            </div>
+            <div class="filter__controls">
+              <p class="filter__controls-text">Фильтровать</p>
+              <button type="button" class="filter__controls-button" aria-label="Закрыть"></button>
+            </div>
+          </div>
+        </section>
+
+        <section class="catalog">
+          <h2 class="catalog__title">Межкомнатные двери</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+
+            <li class="catalog__item">
+              <div class="catalog-card">
+                <div class="catalog-card__img">
+                  <picture>
+                    <source srcset="img/catalog-card.png 1x, img/catalog-card@2x.png 2x">
+                    <img src="img/catalog-card.png" alt="woodmodern22">
+                  </picture>
+                </div>
+                <p class="catalog-card__color">Natur Oak</p>
+                <h4 class="catalog-card__title">Вуд Модерн-22</h4>
+                <div class="catalog-card__price"><span class="catalog-card__price-bold">7 920</span>.00 ₽</div>
+                <a href="#" class="catalog-card__link" aria-label="Подробнее"></a>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
 
     </main>
 

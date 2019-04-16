@@ -1,0 +1,21 @@
+.sort-radio__label {
+  position: relative;
+  @include main-font-reg(18px, 22px, 600);
+  color: $text-color;
+}
+
+.sort-radio__input:checked ~ .sort-radio__label {
+  font-weight: 800;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 2px;
+    left: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: $text-color;
+  }
+}

@@ -1,0 +1,53 @@
+.catalog-controls {
+  display: none;
+  width: 100%;
+  border-bottom: 1px solid $light-grey;
+}
+
+.catalog-controls__button {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  padding: 20px;
+  padding-bottom: 19px;
+  @include main-font-bold(12px, 15px, 800);
+  color: $text-color;
+  text-transform: uppercase;
+
+  &:not(:first-child)::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: $light-grey;
+  }
+
+  &--sort::after {
+    position: absolute;
+    content: "";
+    width: 7px;
+    height: 10px;
+    right: 27px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url("../img/card-arrow-link.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .catalog-controls {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
