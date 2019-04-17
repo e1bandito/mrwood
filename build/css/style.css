@@ -2453,7 +2453,17 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 25px;
     line-height: 30px;
     font-weight: 800;
-    letter-spacing: 2.2px; } }
+    letter-spacing: 2.2px; }
+  .mobile-nav--white {
+    background-color: #fafafa; }
+    .mobile-nav--white .mobile-nav__link--active {
+      color: #000000; }
+    .mobile-nav--white .mobile-nav__link:active {
+      color: #000000; }
+    .mobile-nav--white .mobile-nav__list::after {
+      background-color: #000000; }
+    .mobile-nav--white .mobile-nav__sublink {
+      color: #000000; } }
 
 .molding-card {
   width: 200px;

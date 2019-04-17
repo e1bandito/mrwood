@@ -74,4 +74,31 @@
     @include main-font-bold(25px, 30px, 800);
     letter-spacing: 2.2px;
   }
+
+  .mobile-nav--white {
+    background-color: $bg-color;
+
+    .mobile-nav__link {
+
+      &--active {
+        color: $black;
+      }
+
+      &:active {
+        color: $black;
+
+      }
+    }
+
+    .mobile-nav__list {
+
+      &::after {
+        background-color: $black;
+      }
+    }
+
+    .mobile-nav__sublink {
+      color: $black;
+    }
+  }
 }
