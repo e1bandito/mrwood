@@ -71,7 +71,7 @@
 .page-main__title {
   position: relative;
   color: $white;
-  @include main-font-bold(72px, 78px, 900);
+  @include main-font(72px, 78px, 900);
   letter-spacing: 1.3px;
   margin: 0;
   padding: 0;
@@ -108,7 +108,7 @@
   }
 
   .page-main__title {
-    @include main-font-bold(50px, 55px, 900);
+    @include main-font(50px, 55px, 900);
 
     &::after {
       width: 80px;
@@ -142,7 +142,7 @@
   }
 
   .page-main__title {
-    @include main-font-bold(37px, 55px, 900);
+    @include main-font(37px, 55px, 900);
     letter-spacing: 0.53px;
 
     &::after {
@@ -179,7 +179,7 @@
 
   .page-main__subnav-link {
     color: $light-grey;
-    @include main-font-bold(12px, 15px, 700);
+    @include main-font(12px, 15px, 700);
     letter-spacing: 1.1px;
 
     &:hover {

@@ -7,7 +7,7 @@
 }
 
 .accordion__header {
-  @include main-font-bold(14px, 18px 800);
+  @include main-font(14px, 18px 800);
   letter-spacing: 1.3px;
   color: $text-grey;
   padding: 8px;
@@ -32,7 +32,7 @@
 
 .accordion__content-title {
   margin: 0;
-  @include main-font-bold(12px, 15px, 700);
+  @include main-font(12px, 15px, 700);
   color: $text-grey;
   letter-spacing: 1.2px;
   margin-bottom: 5px;
@@ -40,7 +40,7 @@
 
 .accordion__content-text {
   margin: 0;
-  @include main-font-reg(14px, 21px, 500);
+  @include main-font(14px, 21px, 500);
   color: $text-grey;
   letter-spacing: 1.7px;
 }

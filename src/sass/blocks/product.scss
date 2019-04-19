@@ -22,7 +22,7 @@
 }
 
 .product__link {
-  @include main-font-bold(14px, 18px, 800);
+  @include main-font(14px, 18px, 800);
   color: $lightest-grey;
   letter-spacing: 0.5px;
 
@@ -57,7 +57,7 @@
   padding-top: 21.5%;
   margin: 0;
   word-wrap: break-word;
-  @include main-font-bold(100px, 105px, 900);
+  @include main-font(100px, 105px, 900);
   color: $white;
   text-transform: uppercase;
   margin-left: 15px;
@@ -65,7 +65,7 @@
 }
 
 .product__title-text {
-  @include main-font-bold(200px, 150px, 900);
+  @include main-font(200px, 150px, 900);
 }
 
 .product__country {
@@ -79,14 +79,14 @@
 }
 
 .product__country-title {
-  @include main-font-reg(14px, 18px, 600);
+  @include main-font(14px, 18px, 600);
   color: $white;
   opacity: 0.5;
   letter-spacing: 0.5px;
 }
 
 .product__country-text {
-  @include main-font-bold(21px, 25px, 800);
+  @include main-font(21px, 25px, 800);
   color: $white;
   letter-spacing: 1.1px;
   text-transform: uppercase;
@@ -101,7 +101,7 @@
 }
 
 .product__material-title {
-  @include main-font-reg(14px, 18px, 600);
+  @include main-font(14px, 18px, 600);
   color: $white;
   opacity: 0.5;
   letter-spacing: 0.5px;
@@ -109,7 +109,7 @@
 }
 
 .product__material-text {
-  @include main-font-bold(18px, 22px, 800);
+  @include main-font(18px, 22px, 800);
   color: $white;
   letter-spacing: 0.64px;
 }
@@ -201,7 +201,7 @@
     display: block;
     padding-left: 22px;
     color: $lightest-grey;
-    @include main-font-bold(14px, 18px, 800);
+    @include main-font(14px, 18px, 800);
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
@@ -238,12 +238,12 @@
   }
 
   .product__country-title {
-    @include main-font-reg(10px, 13px, 600);
+    @include main-font(10px, 13px, 600);
     letter-spacing: 0.35px;
   }
 
   .product__country-text {
-    @include main-font-bold(14px, 18px, 800);
+    @include main-font(14px, 18px, 800);
     letter-spacing: 2px;
   }
 }

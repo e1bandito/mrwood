@@ -52,7 +52,7 @@
 
   .mobile-nav__link {
     color: $text-grey;
-    @include main-font-bold(35px, 43px, 800);
+    @include main-font(35px, 43px, 800);
     letter-spacing: 1px;
 
     &--active {
@@ -71,7 +71,7 @@
 
   .mobile-nav__sublink {
     color: $white;
-    @include main-font-bold(25px, 30px, 800);
+    @include main-font(25px, 30px, 800);
     letter-spacing: 2.2px;
   }
 

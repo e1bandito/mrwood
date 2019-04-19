@@ -65,12 +65,23 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 43px;
+
+  & .icon-pin,
+    .icon-circle {
+    font-size: 26px;
+    color: $text-color;
+  }
+
+  & .icon-triangle {
+    font-size: 25px;
+    color: $text-color;
+  }
 }
 
 .dealer__link-title {
   width: 100%;
   color: $white;
-  @include main-font-bold(18px, 22px, 800);
+  @include main-font(18px, 22px, 800);
   margin: 0;
   margin-bottom: 11px;
 }
@@ -79,7 +90,7 @@
   width: 100%;
   color: $white;
   margin: 0;
-  @include main-font-reg(14px, 18px, 600);
+  @include main-font(14px, 18px, 600);
   opacity: 0.5;
 }
 

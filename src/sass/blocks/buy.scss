@@ -1,24 +1,21 @@
 .buy__link {
   position: relative;
-  @include main-font-reg(18px, 22px, 800);
+  @include main-font(18px, 22px, 800);
   color: $white;
   letter-spacing: 0.64px;
   padding-left: 65px;
   margin-left: 60px;
   transition: all 0.3s;
 
-  &::before {
-    content: "";
+  &-icon {
     position: absolute;
     left: 0;
     top: -9px;
     width: 40px;
     height: 40px;
     border-radius: 4px;
-    background-image: url("../img/download-arrow.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 55%;
+    text-align: center;
+    line-height: 40px;
     background-color: $card-bg;
   }
 

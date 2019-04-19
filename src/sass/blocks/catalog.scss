@@ -6,7 +6,7 @@
 
 .catalog__title {
   display: none;
-  @include main-font-bold(25px, 30px, 900);
+  @include main-font(25px, 30px, 900);
   color: $text-color;
 }
 
@@ -61,6 +61,12 @@
     &:nth-of-type(2n) {
       margin-right: 0;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .catalog {
+    padding-right: 20px;
   }
 }
 

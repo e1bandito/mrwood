@@ -1,0 +1,58 @@
+.select {
+  position: relative;
+  width: 282px;
+  align-self: center;
+  margin-left: 25px;
+  z-index: 2;
+
+  &:hover {
+    &  .select__dropdown {
+      display: block;
+    }
+  }
+}
+
+.select__dropdown {
+  position: absolute;
+  left: 0;
+  top: 51px;
+  display: none;
+  z-index: 2;
+}
+
+.select__item {
+  width: 282px;
+  height: 52px;
+  @include main-font(18px, 22px, 400);
+  padding: 15px 25px;
+  color: $text-color;
+  background-color: $select-bg;
+  cursor: pointer;;
+
+  &--active {
+    font-weight: 600;
+  }
+}
+
+.select__placeholder {
+  position: relative;
+  padding: 15px 25px;
+  height: 52px;
+  background-color: $select-bg;
+  border-radius: 4px;
+  @include main-font(18px, 22px, 600);
+  color: $text-color;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    right: 25px;
+    top: 21px;
+    border-left: 3px solid $text-color;
+    border-bottom: 3px solid $text-color;
+    transform: rotate(-45deg);
+  }
+}

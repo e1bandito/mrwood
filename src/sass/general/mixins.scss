@@ -1,19 +1,5 @@
-@mixin main-font-reg ($fs:$default-fs, $li:$default-li, $fw:400) {
+@mixin main-font ($fs:$default-fs, $li:$default-li, $fw:400) {
   font-family: "Montserrat", Arial, sans-serif;
-  font-size: $fs;
-  line-height: $li;
-  font-weight: $fw;
-}
-
-@mixin main-font-light ($fs:$default-fs, $li:$default-li, $fw:300) {
-  font-family: "MontserratLight", Arial, sans-serif;
-  font-size: $fs;
-  line-height: $li;
-  font-weight: $fw;
-}
-
-@mixin main-font-bold ($fs:$default-fs, $li:$default-li, $fw:700) {
-  font-family: "MontserratBold", Arial, sans-serif;
   font-size: $fs;
   line-height: $li;
   font-weight: $fw;

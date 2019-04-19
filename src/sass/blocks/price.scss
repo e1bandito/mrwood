@@ -4,7 +4,7 @@
 }
 
 .price__title {
-  @include main-font-bold(14px, 18px, 700);
+  @include main-font(14px, 18px, 700);
   letter-spacing: 0.6px;
   color: $text-grey;
   margin: 0;
@@ -18,7 +18,7 @@
 
   &-bold {
     color: $black;
-    @include main-font-bold(30px, 37px, 800);
+    @include main-font(30px, 37px, 800);
     letter-spacing: 1.16px;
     color: $text-color;
   }
@@ -38,7 +38,7 @@
   }
 
   .price__value-bold {
-    @include main-font-bold(21px, 25px, 800);
+    @include main-font(21px, 25px, 800);
     letter-spacing: 1.16px;
   }
 }

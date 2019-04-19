@@ -1,6 +1,6 @@
 .sort-radio__label {
   position: relative;
-  @include main-font-reg(18px, 22px, 600);
+  @include main-font(18px, 22px, 600);
   color: $text-color;
 }
 

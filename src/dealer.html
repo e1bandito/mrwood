@@ -11,23 +11,28 @@
     <main class="page-main page-main--dealer">
       <header class="page-header page-header--dealer">
         <div class="page-header__logo">
-          <picture>
-            <source srcset="img/logo.png 1x, img/logo@2x.png 2x">
-            <img class="page-header__img" src="img/logo.png" alt="Mr.Wood">
-          </picture>
+          <a href="main.html" class="page-header__logo-link">
+            <picture>
+              <source srcset="img/logo.png 1x, img/logo@2x.png 2x">
+              <img class="page-header__img" src="img/logo.png" alt="Mr.Wood">
+            </picture>
+          </a>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="main.html" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a href="catalog.html" class="main-nav__link">Каталог</a></li>
             <li class="main-nav__item"><a href="dealer.html" class="main-nav__link">Стать дилером</a></li>
             <li class="main-nav__item"><a href="buy.html" class="main-nav__link">Где купить</a></li>
-            <li class="main-nav__item"><a href="#" class="main-nav__link">Контакты</a></li>
-            <li class="main-nav__item"><a href="tel:+79999291206" class="main-nav__link">+7 (999) 929 – 12 – 06</a></li>
           </ul>
         </nav>
-        <a href="tel:+79999291206" class="page-header__phone-link" aria-label="Позвонить"></a>
-        <button class="page-header__nav-button" type="button"><span class="page-header__button-text page-header__button-text--main">Главная</span><span class="page-header__button-text page-header__button-text--close">Закрыть</span></button>
+        <div class="page-header__phone-wrapper">
+          <a href="tel:+79999291206" class="page-header__link-phone">+7 (999) 929 – 12 – 06</a>
+        </div>
+        <a href="tel:+79999291206" class="page-header__phone-link icon-phone-icon-black" aria-label="Позвонить"></a>
+        <button class="page-header__nav-button" type="button">
+          <span class="page-header__button-text page-header__button-text--main">Главная<span class="icon-menu-icon-black"></span></span>
+          <span class="page-header__button-text page-header__button-text--close">Закрыть<span class="icon-cross"></span></span>
+        </button>
       </header>
 
       <div class="page-main__subnav">
@@ -125,7 +130,7 @@
             <li class="dealer__item">
               <a href="#" class="dealer__link">
                 <div class="dealer__item-image">
-                  <img src="img/pin.svg" alt="material" class="dealer__img">
+                  <span class="icon-pin"></span>
                 </div>
                 <h3 class="dealer__link-title">Gauthier Drewitt</h3>
                 <p class="dealer__text">Illustration In Marketing Materials</p>
@@ -134,7 +139,7 @@
             <li class="dealer__item">
               <a href="#" class="dealer__link">
                 <div class="dealer__item-image">
-                  <img src="img/circle.svg" alt="material" class="dealer__img">
+                  <span class="icon-circle"></span>
                 </div>
                 <h3 class="dealer__link-title">Gauthier Drewitt</h3>
                 <p class="dealer__text">Illustration In Marketing Materials</p>
@@ -143,7 +148,7 @@
             <li class="dealer__item">
               <a href="#" class="dealer__link">
                 <div class="dealer__item-image">
-                  <img src="img/triangle.svg" alt="material" class="dealer__img">
+                  <span class="icon-triangle"></span>
                 </div>
                 <h3 class="dealer__link-title">Gauthier Drewitt</h3>
                 <p class="dealer__text">Illustration In Marketing Materials</p>

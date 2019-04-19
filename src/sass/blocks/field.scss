@@ -14,7 +14,7 @@
   border: none;
   background-color: $menu-bg;
   border-bottom: 2px solid $border-grey;
-  @include main-font-bold(18px, 22px, 800);
+  @include main-font(18px, 22px, 800);
   letter-spacing: 1.75px;
   color: $white;
   padding-top: 7px;
@@ -27,7 +27,7 @@
   top: 28px;
   color: $white;
   opacity: 0.5;
-  @include main-font-reg(18px, 22px, 600);
+  @include main-font(18px, 22px, 600);
   letter-spacing: 1.75px;
   transition: all 0.3s;
 }
@@ -36,7 +36,7 @@
 .field--filled > .field__label {
   left: 0;
   top: 0;
-  @include main-font-reg(14px, 18px, 500);
+  @include main-font(14px, 18px, 500);
 }
 
 @media (max-width: $mobile-width) {

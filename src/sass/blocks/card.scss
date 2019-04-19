@@ -29,7 +29,7 @@
 
 .card__title {
   margin: 0;
-  @include main-font-bold(16px, 19px, 800);
+  @include main-font(16px, 19px, 800);
   color: $text-color;
   letter-spacing: 1px;
   margin-bottom: 19px;
@@ -39,24 +39,20 @@
   margin: 0;
   color: $text-color;
   letter-spacing: 1px;
-  @include main-font-reg(10px, 12px, 400);
+  @include main-font(10px, 12px, 400);
 
   &-bold {
-    @include main-font-bold(14px, 18px, 800);
+    @include main-font(14px, 18px, 800);
   }
 }
 
 .card__link {
   position: absolute;
-  right: 20px;
-  bottom: 22px;
+  right: 16px;
+  bottom: 18px;
   display: block;
-  width: 8px;
-  height: 12px;
-  background-image: url("../img/card-arrow-link.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
+  font-size: 12px;
+  color: $text-color;
 
   &:hover {
     opacity: 0.8;

@@ -9,6 +9,11 @@
   display: flex;
   justify-content: space-between;
   margin-right: 12px;
+
+  & .icon-rating-star {
+    color: $dark-yellow;
+    font-size: 14px;
+  }
 }
 
 .rating__value {
@@ -16,12 +21,12 @@
 }
 
 .rating__current-value {
-  @include main-font-bold(14px, 18px, 800);
+  @include main-font(14px, 18px, 800);
   color: $dark-yellow;
 }
 
 .rating__max-value {
-  @include main-font-reg(10px, 10px, 400);
+  @include main-font(10px, 10px, 400);
   margin-left: -2px;
   color: $text-grey;
 }

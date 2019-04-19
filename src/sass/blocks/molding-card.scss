@@ -22,7 +22,7 @@
 }
 
 .molding-card__text {
-  @include main-font-reg(16px, 26px, 600);
+  @include main-font(16px, 26px, 600);
   letter-spacing: 1.37px;
   color: $text-color;
   margin: 0;

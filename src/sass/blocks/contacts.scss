@@ -49,7 +49,7 @@
 .contacts__item-title {
   margin: 0;
   color: $white;
-  @include main-font-reg(18px, 22px, 600);
+  @include main-font(18px, 22px, 600);
   opacity: 0.5;
   letter-spacing: 1.8px;
   margin-bottom: 3px;
@@ -58,14 +58,14 @@
 .contacts__text {
   margin: 0;
   color: $white;
-  @include main-font-reg(18px, 35px, 700);
+  @include main-font(18px, 35px, 700);
   letter-spacing: 1.2px;
 }
 
 .contacts__subtext {
   margin: 0;
   color: $white;
-  @include main-font-reg(14px, 18px, 600);
+  @include main-font(14px, 18px, 600);
   letter-spacing: 1.2px;
   margin-top: 5px;
   opacity: 0.5;
@@ -118,16 +118,16 @@
   }
 
   .contacts__item-title {
-    @include main-font-reg(15px, 19px, 600);
+    @include main-font(15px, 19px, 600);
     margin-bottom: 8px;
   }
 
   .contacts__text {
-    @include main-font-reg(16px, 25px, 600);
+    @include main-font(16px, 25px, 600);
   }
 
   .contacts__subtext {
-    @include main-font-reg(14px, 18px, 600);
+    @include main-font(14px, 18px, 600);
   }
 }
 

@@ -1,7 +1,8 @@
 .page-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  flex-wrap: wrap;
   padding: 60px;
   z-index: 999;
 
@@ -16,6 +17,11 @@
   &--buy {
     margin-bottom: 4px;
   }
+
+  &--product-card {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
 }
 
 .page-header--product-card .page-header__logo {
@@ -25,6 +31,15 @@
   }
 }
 
+.page-header__logo:hover {
+    cursor: pointer;
+    opacity: 0.8;
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
 .page-header--catalog .page-header__logo {
 
   &--black {
@@ -32,10 +47,40 @@
   }
 }
 
+.page-header__link-phone {
+  align-self: flex-start;
+  color: $white;
+  @include main-font(18px, 22px, 600);
+  letter-spacing: 1.29px;
+  @include underline-appear-hover(3px, -8px, $white, $white);
+  margin-left: 58px;
+
+  &--black {
+    color: $text-color;
+
+    &:hover {
+      color: $text-color;
+      @include underline-appear-hover(3px, -8px, $text-color, $text-color);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    margin-left: 30px;
+  }
+}
+
 .page-header__nav-button,
 .page-header__phone-link,
 .page-header__button-text--close {
   display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .page-header__phone-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 @media (max-width: $tablet-width) {
@@ -49,7 +94,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 15px 16px;
+    padding: 13px 20px 13px 17px;
     background-color: $dark-blue;
     border-radius: 15px 15px 0 0;
     align-items: center;
@@ -66,35 +111,21 @@
     &--product-card {
       background-color: $white;
       box-shadow: 0px 0px 62px #dadde8;
-
-      & .page-header__nav-button--close {
-        &::after {
-          background-image: url("../img/close-icon-black.svg");
-          width: 36px;
-          height: 36px;
-          right: 5px;
-        }
-      }
     }
 
     &--catalog {
       background-color: $white;
       box-shadow: 0px 0px 62px #dadde8;
-
-      & .page-header__nav-button--close {
-        &::after {
-          background-image: url("../img/close-icon-black.svg");
-          width: 36px;
-          height: 36px;
-          right: 5px;
-        }
-      }
     }
   }
 
   .page-header__logo {
     width: 85px;
     height: 12px;
+  }
+
+  .page-header__phone-wrapper {
+    display: none;
   }
 
   .page-header--product-card .page-header__logo {
@@ -107,29 +138,22 @@
 
   .page-header__nav-button {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
     border: none;
     background-color: $darkest-blue;
     color: $white;
-    @include main-font-bold(14px, 16px, 600);
-    padding: 10px 54px 13px 17px;
+    @include main-font(14px, 18px, 600);
+    padding: 11px 9px 11px 17px;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 11px;
     cursor: pointer;
 
-    &::after {
-      position: absolute;
-      content: "";
-      width: 17px;
-      height: 17px;
-      right: 16px;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      background-image: url("../img/menu-icon.svg");
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 100%;
+    & .icon-menu-icon-black {
+      margin-top: 3px;
+      margin-left: 14px;
+      font-size: 18px;
+      line-height: 18px;
     }
 
     &:hover {
@@ -141,23 +165,19 @@
     }
 
     &--close {
-      padding-right: 51px;
+      padding-right: 11px;
 
-      &::after {
-        background-image: url("../img/close-icon.svg");
-        width: 36px;
-        height: 36px;
-        right: 5px;
+      & .icon-cross {
+        margin-top: 3px;
+        margin-left: 14px;
+        font-size: 18px;
+        line-height: 18px;
       }
     }
 
     &--product-card {
       background-color: $light-menu-bg;
       color: $black;
-
-      &::after {
-        background-image: url("../img/menu-icon-black.svg");
-      }
 
       &:hover {
         color: $text-color;
@@ -180,11 +200,11 @@
     background-color: $darkest-blue;
     width: 40px;
     height: 40px;
+    color: $white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
     border-radius: 10px;
-    background-image: url("../img/phone-icon.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 15px 16px;
     margin-left: auto;
 
     &:active {
@@ -193,7 +213,7 @@
 
     &--product-card {
       background-color: $light-menu-bg;
-      background-image: url("../img/phone-icon-black.svg");
+      color: $text-color;
     }
   }
 }

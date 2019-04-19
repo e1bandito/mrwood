@@ -1,3 +1,7 @@
+.main-nav {
+  margin-left: auto;
+}
+
 .main-nav--white .main-nav__link {
   color: $text-color;
   @include underline-appear-hover(3px, -8px, $text-color, $text-color);
@@ -15,11 +19,15 @@
 .main-nav__item {
   margin-left: 58px;
   padding-bottom: 20px;
+
+  @media (max-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 
 .main-nav__link {
   color: $white;
-  @include main-font-reg(18px, 22px, 600);
+  @include main-font(18px, 22px, 600);
   letter-spacing: 1.29px;
   @include underline-appear-hover(3px, -8px, $white, $white);
 }

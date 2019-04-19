@@ -11,7 +11,7 @@
 .tabs__switcher-item {
   color: $white;
   opacity: 0.2;
-  @include main-font-bold(56px, 68px, 900);
+  @include main-font(56px, 68px, 900);
   letter-spacing: 0.5px;
   margin-right: 80px;
   cursor: pointer;
@@ -46,14 +46,14 @@
 
 @media (max-width: $full-desktop-width) {
   .tabs__switcher-item {
-    @include main-font-bold(46px, 50px, 900);
+    @include main-font(46px, 50px, 900);
     margin-right: 30px;
   }
 }
 
 @media (max-width: $desktop-width) {
   .tabs__switcher-item {
-    @include main-font-bold(30px, 37px, 900);
+    @include main-font(30px, 37px, 900);
     opacity: 0.5;
 
     &--active {

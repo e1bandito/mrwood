@@ -6,7 +6,7 @@
 
 .contact-form__title {
   color: $white;
-  @include main-font-bold(56px, 68px, 900);
+  @include main-font(56px, 68px, 900);
   margin: 0;
   margin-top: 8px;
   margin-bottom: 48px;
@@ -23,7 +23,7 @@
 
 .contact-form__text {
   width: 290px;
-  @include main-font-reg(12px, 20px, 600);
+  @include main-font(12px, 20px, 600);
   color: $white;
   opacity: 0.5;
   padding: 0;
@@ -48,7 +48,7 @@
   }
 
   .contact-form__title {
-    @include main-font-bold(30px, 37px, 800);
+    @include main-font(30px, 37px, 800);
     margin-top: 18px;
     margin-bottom: 43px;
   }
@@ -60,7 +60,7 @@
   .contact-form__text {
     max-width: 290px;
     width: 100%;
-    @include main-font-reg(10px, 20px, 600);
+    @include main-font(10px, 20px, 600);
   }
 }
 
