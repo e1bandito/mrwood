@@ -140,3 +140,47 @@
     }
   }
 }
+
+@media (max-width: $full-mobile-width) {
+  .catalog-card {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+  }
+
+  .catalog-card__img {
+    margin-bottom: 20px;
+
+    & img {
+      margin-top: -46px;
+      width: 93px;
+      height: 231px;
+    }
+  }
+
+  .catalog-card__color {
+    @include main-font(14px, 18px, 700);
+  }
+
+  .catalog-card__title {
+    @include main-font(20px, 25px, 800);
+    margin-bottom: 25px;
+  }
+
+  .catalog-card__price {
+    @include main-font(10px, 12px, 400);
+
+    &-bold {
+      @include main-font(25px, 30px, 800);
+    }
+  }
+
+  .catalog-card__link {
+    right: 26px;
+    bottom: 30px;
+    font-size: 16px;
+  }
+}
