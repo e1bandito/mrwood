@@ -1672,7 +1672,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     content: "";
     width: 7px;
     height: 7px;
-    right: 29px;
+    right: 13%;
     top: 22px;
     border-left: 2px solid #2a292e;
     border-bottom: 2px solid #2a292e;
