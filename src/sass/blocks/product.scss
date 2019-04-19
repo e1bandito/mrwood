@@ -199,24 +199,10 @@
     left: 20px;
     top: -30px;
     display: block;
-    padding-left: 22px;
     color: $lightest-grey;
     @include main-font(14px, 18px, 800);
     letter-spacing: 0.5px;
     text-transform: uppercase;
-
-    &::before {
-      position: absolute;
-      content: "";
-      width: 9px;
-      height: 14px;
-      left: 0;
-      top: 3px;
-      background-image: url("../img/arrow-back.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center center;
-    }
 
     &:hover {
       opacity: 0.5;

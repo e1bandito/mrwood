@@ -170,6 +170,7 @@
   .filter__controls {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -177,8 +178,8 @@
     background: $white;
     box-shadow: 0px 0px 62px #dadde8;
     border-radius: 15px 15px 0px 0px;
-    padding: 22px 20px;
-    padding-top: 23px;
+    padding: 17px 20px;
+    padding-top: 18px;
   }
 
   .filter__controls-text {
@@ -194,10 +195,6 @@
     border: none;
     background-color: $light-menu-bg;
     cursor: pointer;
-    background-image: url("../img/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 
     &:active {
       opacity: 0.6;

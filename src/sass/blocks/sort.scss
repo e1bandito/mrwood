@@ -12,52 +12,9 @@
   display: none;
 }
 
-.sort__select {
-  width: 282px;
-  height: 52px;
-  border: none;
-  border-radius: 4px;
-  background-color: $select-bg;
-  appearance: none;
-  padding-left: 25px;
-  margin-top: 3px;
-  @include main-font(18px, 22px, 600);
-  color: $text-color;
-  cursor: pointer;
-
-  &::-ms-expand {
-    display: none;
-  }
-}
-
 .sort__text {
   @include main-font(18px, 22px, 900);
   color: $text-color;
-}
-
-.sort__wrapper {
-  display: inline-block;
-  position: relative;
-  margin-left: 25px;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 8px;
-    height: 12px;
-    right: 23px;
-    top: 24px;
-    background-image: url("../img/card-arrow-link.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    transform: rotate(90deg);
-    transition: all 0.3s;
-  }
-
-  &:hover::after {
-    opacity: 0.7;
-  }
 }
 
 @media (max-width: $tablet-width) {
@@ -107,6 +64,7 @@
   .sort__controls {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -114,8 +72,8 @@
     background: $white;
     box-shadow: 0px 0px 62px #dadde8;
     border-radius: 15px 15px 0px 0px;
-    padding: 22px 20px;
-    padding-top: 23px;
+    padding: 17px 20px;
+    padding-top: 18px;
   }
 
   .sort__controls-text {
@@ -131,10 +89,6 @@
     border: none;
     background-color: $light-menu-bg;
     cursor: pointer;
-    background-image: url("../img/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
 
     &:active {
       opacity: 0.6;

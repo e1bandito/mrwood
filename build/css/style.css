@@ -1569,6 +1569,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       margin-top: -20px;
       width: 58px;
       height: 143px; }
+  .catalog-card__link {
+    right: 11px;
+    bottom: 15px;
+    font-size: 10px; }
   .catalog-card__color {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 10px;
@@ -1627,17 +1631,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     position: absolute;
     content: "";
     width: 7px;
-    height: 10px;
-    right: 27px;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background-image: url("../img/card-arrow-link.svg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+    height: 7px;
+    right: 29px;
+    top: 22px;
+    border-left: 2px solid #2a292e;
+    border-bottom: 2px solid #2a292e;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
 
 @media (max-width: 768px) {
   .catalog-controls {
@@ -2376,6 +2376,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -2384,8 +2387,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -webkit-box-shadow: 0px 0px 62px #dadde8;
             box-shadow: 0px 0px 62px #dadde8;
     border-radius: 15px 15px 0px 0px;
-    padding: 22px 20px;
-    padding-top: 23px; }
+    padding: 17px 20px;
+    padding-top: 18px; }
   .filter__controls-text {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 21px;
@@ -2399,11 +2402,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border-radius: 8px;
     border: none;
     background-color: #e8e9e9;
-    cursor: pointer;
-    background-image: url("../img/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%; }
+    cursor: pointer; }
     .filter__controls-button:active {
       opacity: 0.6; } }
 
@@ -3691,7 +3690,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     left: 20px;
     top: -30px;
     display: block;
-    padding-left: 22px;
     color: #d7d7d7;
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 14px;
@@ -3699,17 +3697,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-weight: 800;
     letter-spacing: 0.5px;
     text-transform: uppercase; }
-    .product__card-link::before {
-      position: absolute;
-      content: "";
-      width: 9px;
-      height: 14px;
-      left: 0;
-      top: 3px;
-      background-image: url("../img/arrow-back.svg");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: center center; }
     .product__card-link:hover {
       opacity: 0.5; } }
 
@@ -3923,54 +3910,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .sort__mobile {
   display: none; }
 
-.sort__select {
-  width: 282px;
-  height: 52px;
-  border: none;
-  border-radius: 4px;
-  background-color: #efeff0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  padding-left: 25px;
-  margin-top: 3px;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 600;
-  color: #2a292e;
-  cursor: pointer; }
-  .sort__select::-ms-expand {
-    display: none; }
-
 .sort__text {
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 18px;
   line-height: 22px;
   font-weight: 900;
   color: #2a292e; }
-
-.sort__wrapper {
-  display: inline-block;
-  position: relative;
-  margin-left: 25px; }
-  .sort__wrapper::after {
-    position: absolute;
-    content: "";
-    width: 8px;
-    height: 12px;
-    right: 23px;
-    top: 24px;
-    background-image: url("../img/card-arrow-link.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s; }
-  .sort__wrapper:hover::after {
-    opacity: 0.7; }
 
 @media (max-width: 1024px) {
   .sort {
@@ -4017,6 +3962,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -4025,8 +3973,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -webkit-box-shadow: 0px 0px 62px #dadde8;
             box-shadow: 0px 0px 62px #dadde8;
     border-radius: 15px 15px 0px 0px;
-    padding: 22px 20px;
-    padding-top: 23px; }
+    padding: 17px 20px;
+    padding-top: 18px; }
   .sort__controls-text {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 21px;
@@ -4040,11 +3988,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border-radius: 8px;
     border: none;
     background-color: #e8e9e9;
-    cursor: pointer;
-    background-image: url("../img/cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%; }
+    cursor: pointer; }
     .sort__controls-button:active {
       opacity: 0.6; } }
 

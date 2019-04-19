@@ -114,6 +114,12 @@
     }
   }
 
+  .catalog-card__link {
+    right: 11px;
+    bottom: 15px;
+    font-size: 10px;
+  }
+
   .catalog-card__color {
     @include main-font(10px, 13px, 700);
     letter-spacing: 0.35px;
