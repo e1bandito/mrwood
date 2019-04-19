@@ -1347,6 +1347,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer; }
+  .btn--dealer {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    -ms-flex-item-align: start;
+        align-self: flex-start; }
   .btn--page-main {
     position: absolute;
     right: 0;
@@ -1361,7 +1367,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     .btn--yellow:hover {
       background-color: #ffffff; }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .btn {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 14px;
@@ -1370,6 +1376,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     letter-spacing: 0.53px; }
     .btn--yellow {
       padding: 16px 26px; } }
+
+@media (max-width: 500px) {
+  .btn--dealer {
+    position: relative; } }
+
+@media (max-width: 375px) {
+  .btn--dealer {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+  .btn--contact-form {
+    width: 100%; } }
 
 .buy__link {
   position: relative;
@@ -1805,11 +1823,18 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     border: 2px solid #fafafa; }
 
 .contact-form {
-  max-width: 552px;
-  width: 50%;
+  width: 100%;
   margin-right: 30px; }
+  .contact-form form {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
 
 .contact-form__title {
+  width: 100%;
   color: #ffffff;
   font-family: "Montserrat", Arial, sans-serif;
   font-size: 56px;
@@ -1820,7 +1845,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-bottom: 48px; }
 
 .contact-form__inner {
+  width: 46%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   margin-bottom: 60px; }
+  .contact-form__inner:nth-of-type(1) {
+    margin-right: 60px; }
 
 .contact-form__wrapper {
   display: -webkit-box;
@@ -1828,7 +1859,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  padding-top: 14px; }
 
 .contact-form__text {
   width: 290px;
@@ -1847,12 +1879,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .contact-form {
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 45px; } }
+    margin-bottom: 45px; }
+  .contact-form__wrapper {
+    padding-top: 22px; } }
 
 @media (max-width: 768px) {
   .contact-form {
     padding-left: 20px;
     padding-right: 20px; }
+    .contact-form form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .contact-form__title {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 30px;
@@ -1861,7 +1900,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin-top: 18px;
     margin-bottom: 43px; }
   .contact-form__inner {
-    margin-bottom: 42px; }
+    width: 100%;
+    margin-bottom: 0;
+    padding-right: 0; }
   .contact-form__text {
     max-width: 290px;
     width: 100%;
@@ -2028,162 +2069,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .copyright {
     display: none; } }
 
-.dealer {
-  max-width: 680px;
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.dealer__image {
-  max-width: 441px;
-  width: 100%;
-  min-width: 345px;
-  margin-bottom: 48px; }
-  .dealer__image img {
-    display: block;
-    width: 100%; }
-
-.dealer__button {
-  margin-top: 138px;
-  padding: 20px 30px; }
-
-.dealer__list {
-  min-width: 100%;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  overflow-x: auto; }
-
-.dealer__item {
-  min-width: 220px;
-  width: 220px;
-  background-color: #2f333c;
-  border-radius: 10px;
-  margin-right: 10px; }
-  @media (max-width: 1700px) {
-    .dealer__item {
-      min-width: 200px;
-      width: 200px; } }
-
-.dealer__link {
-  padding: 40px 22px 37px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  text-align: center; }
-
-.dealer__item-image {
-  width: 50px;
-  height: 50px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 43px; }
-  .dealer__item-image .icon-pin,
-  .dealer__item-image .icon-circle {
-    font-size: 26px;
-    color: #2a292e; }
-  .dealer__item-image .icon-triangle {
-    font-size: 25px;
-    color: #2a292e; }
-
-.dealer__link-title {
-  width: 100%;
-  color: #ffffff;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 800;
-  margin: 0;
-  margin-bottom: 11px; }
-
-.dealer__text {
-  width: 100%;
-  color: #ffffff;
-  margin: 0;
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  font-weight: 600;
-  opacity: 0.5; }
-
-@media (max-width: 1440px) {
-  .dealer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .dealer__image {
-    margin-bottom: 0; }
-  .dealer__button {
-    margin-top: 15px;
-    margin-left: 20px;
-    margin-bottom: 55px;
-    padding: 16px 23px; }
-  .dealer__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-left: 20px; }
-  .dealer__item {
-    margin-bottom: 10px; } }
-
-@media (max-width: 1024px) {
-  .dealer {
-    width: 100%;
-    margin: 0 auto; }
-  .dealer__image {
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 355px; } }
-
-@media (max-width: 375px) {
-  .dealer__list {
-    width: 100%;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    overflow-x: auto;
-    padding-left: 20px; }
-  .dealer__item {
-    width: 220px;
-    min-width: 220px;
-    margin-right: 13px; } }
-
 .door-type-radio {
   margin: 0;
   margin-bottom: 35px; }
@@ -2213,7 +2098,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .field {
   position: relative;
-  max-width: 550px;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -2221,7 +2105,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .field__input {
   width: 100%;
-  max-width: 550px;
   height: 73px;
   border: none;
   background-color: #21252f;
@@ -2897,7 +2780,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    height: auto; }
+    min-height: 690px; }
+    @media (max-width: 768px) {
+      .page-main--dealer {
+        height: auto; } }
   .page-main--buy {
     background-color: #21252f;
     min-height: 100vh;
@@ -2926,8 +2812,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     display: -ms-flexbox;
     display: flex;
     padding-left: 160px;
-    padding-right: 210px;
-    margin-bottom: 211px;
+    padding-right: 160px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -2980,7 +2865,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     width: 460px; }
   .page-main__dealer-wrapper {
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px; }
   .page-main__title {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 50px;
@@ -3010,7 +2897,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .page-main__dealer-wrapper {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 191px; }
+    margin-bottom: 80px; }
   .page-main__title {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 37px;

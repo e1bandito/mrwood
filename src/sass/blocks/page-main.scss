@@ -11,7 +11,11 @@
   &--dealer {
     background-color: $menu-bg;
     justify-content: flex-start;
-    height: auto;
+    min-height: 690px;
+
+    @media (max-width: $mobile-width) {
+      height: auto;
+    }
   }
 
   &--buy {
@@ -42,8 +46,7 @@
   &__dealer-wrapper {
     display: flex;
     padding-left: 160px;
-    padding-right: 210px;
-    margin-bottom: 211px;
+    padding-right: 160px;
     justify-content: space-between;
     align-items: flex-start;
 
@@ -105,6 +108,8 @@
 
   .page-main__dealer-wrapper {
     flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .page-main__title {
@@ -138,7 +143,7 @@
   .page-main__dealer-wrapper {
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 191px;
+    margin-bottom: 80px;
   }
 
   .page-main__title {

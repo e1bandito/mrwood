@@ -10,6 +10,13 @@
   transition: all 0.3s;
   cursor: pointer;
 
+  &--dealer {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    align-self: flex-start;
+  }
+
   &--page-main {
     position: absolute;
     right: 0;
@@ -34,13 +41,35 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $tablet-width) {
   .btn {
     @include main-font(14px, 18px, 800);
     letter-spacing: 0.53px;
 
     &--yellow {
       padding: 16px 26px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    &--dealer {
+      position: relative;
+    }
+  }
+}
+
+@media (max-width: $full-mobile-width) {
+  .btn {
+    &--dealer {
+      width: 100%;
+      text-align: center;
+      position: relative;
+    }
+
+    &--contact-form {
+      width: 100%;
     }
   }
 }
