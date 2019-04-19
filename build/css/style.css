@@ -1466,6 +1466,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     opacity: 0.6; }
 
 .catalog-card {
+  display: block;
   position: relative;
   width: 100%;
   background-color: #ffffff;
